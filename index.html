@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Way — Teaching Travel Survey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 40px 44px;
+      width: 100%;
+      max-width: 520px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #b80303;
+      margin-bottom: 32px;
+      letter-spacing: 0.2px;
+    }
+
+    .field { margin-bottom: 28px; }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .hint { font-size: 11px; color: #999; margin-top: 5px; }
+
+    /* Tom Select — light theme overrides */
+    .ts-wrapper { width: 100%; }
+
+    .ts-control {
+      background: #fff !important;
+      border: 1px solid #ccc !important;
+      border-radius: 3px !important;
+      padding: 8px 12px !important;
+      color: #333 !important;
+      font-size: 14px !important;
+      box-shadow: none !important;
+    }
+    .ts-control.focus { border-color: #b80303 !important; box-shadow: 0 0 0 2px rgba(184,3,3,0.12) !important; }
+
+    .ts-control input { color: #333 !important; font-size: 14px !important; }
+    .ts-control input::placeholder { color: #aaa !important; }
+
+    .ts-control .item {
+      background: #f0e0e0 !important;
+      border: 1px solid #e0b0b0 !important;
+      color: #b80303 !important;
+      border-radius: 3px !important;
+      padding: 2px 8px !important;
+      font-size: 13px !important;
+    }
+
+    .ts-dropdown {
+      background: #fff !important;
+      border: 1px solid #ccc !important;
+      border-radius: 3px !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    }
+    .ts-dropdown .option { color: #333 !important; padding: 9px 14px !important; font-size: 13px; }
+    .ts-dropdown .option:hover,
+    .ts-dropdown .option.active { background: #f9f0f0 !important; color: #b80303 !important; }
+    .ts-dropdown .option.selected { background: #f5e8e8 !important; color: #999 !important; }
+
+    button[type="submit"] {
+      width: 100%;
+      background: #b80303;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 13px;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    button[type="submit"]:hover { background: #a00000; }
+    button[type="submit"]:disabled { background: #ccc; cursor: default; }
+
+    #status {
+      margin-top: 16px;
+      font-size: 13px;
+      text-align: center;
+      min-height: 18px;
+    }
+    .error { color: #b80303; }
+
+    .thanks { text-align: center; padding: 16px 0; display: none; }
+    .thanks h2 { font-size: 20px; color: #b80303; margin-bottom: 10px; }
+    .thanks p  { font-size: 14px; color: #777; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Diamond Way Teaching Travel Survey</h1>
+
+    <form id="form">
+      <div class="field">
+        <label>Your home region</label>
+        <select id="home-region" autocomplete="off"></select>
+      </div>
+
+      <div class="field">
+        <label>World regions where you taught in the last 2 years</label>
+        <select id="visited" multiple autocomplete="off"></select>
+        <p class="hint">You can add as many as you like.</p>
+      </div>
+
+      <button type="submit" id="submitBtn">Submit</button>
+      <div id="status"></div>
+    </form>
+
+    <div class="thanks" id="thanks">
+      <h2>Thank you!</h2>
+      <p>Your response has been recorded.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+  <script>
+    const API = "";
+
+    async function init() {
+      const res = await fetch(`${API}/regions`);
+      const regions = await res.json();
+      const options = regions.map(r => ({ value: r.name, text: r.name }));
+
+      new TomSelect("#home-region", {
+        options,
+        placeholder: "Search your region…",
+        maxItems: 1,
+        create: false,
+      });
+
+      new TomSelect("#visited", {
+        options,
+        placeholder: "Search and add regions…",
+        create: false,
+        plugins: ["remove_button"],
+      });
+    }
+
+    init();
+
+    document.getElementById("form").addEventListener("submit", async e => {
+      e.preventDefault();
+      const btn    = document.getElementById("submitBtn");
+      const status = document.getElementById("status");
+
+      const home    = document.getElementById("home-region").tomselect.getValue();
+      const visited = document.getElementById("visited").tomselect.getValue();
+
+      if (!home)          { status.innerHTML = '<span class="error">Please select your home region.</span>';          return; }
+      if (!visited.length){ status.innerHTML = '<span class="error">Please add at least one region where you taught.</span>'; return; }
+
+      btn.disabled = true;
+      status.textContent = "Submitting…";
+
+      try {
+        const res = await fetch(`${API}/submit`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            home_region: home,
+            visited_regions: Array.isArray(visited) ? visited : [visited],
+          }),
+        });
+        const data = await res.json();
+        if (data.ok) {
+          document.getElementById("form").style.display = "none";
+          document.getElementById("thanks").style.display = "block";
+        } else {
+          status.innerHTML = `<span class="error">${data.error || "Something went wrong."}</span>`;
+          btn.disabled = false;
+        }
+      } catch {
+        status.innerHTML = '<span class="error">Could not reach server. Please try again.</span>';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

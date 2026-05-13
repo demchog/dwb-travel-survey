@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "name": "Argentina",
+    "lat": -34.6057,
+    "lng": -58.5528,
+    "center_count": 2
+  },
+  {
+    "id": 2,
+    "name": "Australia — East",
+    "lat": -33.2564,
+    "lng": 150.2113,
+    "center_count": 8
+  },
+  {
+    "id": 3,
+    "name": "Australia — West",
+    "lat": -32.1035,
+    "lng": 115.8263,
+    "center_count": 1
+  },
+  {
+    "id": 4,
+    "name": "Austria",
+    "lat": 47.4718,
+    "lng": 13.5018,
+    "center_count": 12
+  },
+  {
+    "id": 5,
+    "name": "Belarus",
+    "lat": 53.4166,
+    "lng": 29.6121,
+    "center_count": 3
+  },
+  {
+    "id": 6,
+    "name": "Belgium",
+    "lat": 50.9446,
+    "lng": 4.0507,
+    "center_count": 2
+  },
+  {
+    "id": 7,
+    "name": "Brazil",
+    "lat": -26.504,
+    "lng": -49.4134,
+    "center_count": 4
+  },
+  {
+    "id": 8,
+    "name": "Bulgaria",
+    "lat": 42.9896,
+    "lng": 25.7509,
+    "center_count": 7
+  },
+  {
+    "id": 9,
+    "name": "Canada — East",
+    "lat": 44.5272,
+    "lng": -77.5769,
+    "center_count": 2
+  },
+  {
+    "id": 10,
+    "name": "Canada — West",
+    "lat": 50.9972,
+    "lng": -116.9992,
+    "center_count": 3
+  },
+  {
+    "id": 11,
+    "name": "Chile",
+    "lat": -33.2391,
+    "lng": -71.1161,
+    "center_count": 2
+  },
+  {
+    "id": 12,
+    "name": "Colombia",
+    "lat": 5.4126,
+    "lng": -74.5676,
+    "center_count": 5
+  },
+  {
+    "id": 13,
+    "name": "Costa Rica",
+    "lat": 9.9324,
+    "lng": -84.306,
+    "center_count": 2
+  },
+  {
+    "id": 14,
+    "name": "Crimea",
+    "lat": 44.5565,
+    "lng": 33.8395,
+    "center_count": 2
+  },
+  {
+    "id": 15,
+    "name": "Cuba",
+    "lat": 23.0804,
+    "lng": -82.4204,
+    "center_count": 1
+  },
+  {
+    "id": 16,
+    "name": "Czech Republic",
+    "lat": 49.827,
+    "lng": 15.6066,
+    "center_count": 23
+  },
+  {
+    "id": 17,
+    "name": "Denmark",
+    "lat": 55.5357,
+    "lng": 10.4484,
+    "center_count": 6
+  },
+  {
+    "id": 18,
+    "name": "Ecuador",
+    "lat": -0.2202,
+    "lng": -78.5123,
+    "center_count": 1
+  },
+  {
+    "id": 19,
+    "name": "El Salvador",
+    "lat": 13.6972,
+    "lng": -89.2307,
+    "center_count": 1
+  },
+  {
+    "id": 20,
+    "name": "Estonia",
+    "lat": 59.4055,
+    "lng": 26.4559,
+    "center_count": 2
+  },
+  {
+    "id": 21,
+    "name": "Europe Center",
+    "lat": 47.5785,
+    "lng": 10.1719,
+    "center_count": 1
+  },
+  {
+    "id": 22,
+    "name": "Finland",
+    "lat": 60.8817,
+    "lng": 24.7922,
+    "center_count": 3
+  },
+  {
+    "id": 23,
+    "name": "France",
+    "lat": 45.8786,
+    "lng": 4.4235,
+    "center_count": 10
+  },
+  {
+    "id": 24,
+    "name": "Georgia",
+    "lat": 41.7687,
+    "lng": 43.9484,
+    "center_count": 3
+  },
+  {
+    "id": 25,
+    "name": "Germany — East",
+    "lat": 51.7044,
+    "lng": 12.1422,
+    "center_count": 16
+  },
+  {
+    "id": 26,
+    "name": "Germany — North",
+    "lat": 53.955,
+    "lng": 9.9162,
+    "center_count": 26
+  },
+  {
+    "id": 27,
+    "name": "Germany — South",
+    "lat": 48.6863,
+    "lng": 9.8849,
+    "center_count": 52
+  },
+  {
+    "id": 28,
+    "name": "Germany — West",
+    "lat": 51.2976,
+    "lng": 7.7523,
+    "center_count": 34
+  },
+  {
+    "id": 29,
+    "name": "Greece",
+    "lat": 39.1583,
+    "lng": 22.9246,
+    "center_count": 4
+  },
+  {
+    "id": 30,
+    "name": "Guatemala",
+    "lat": 14.5539,
+    "lng": -90.6284,
+    "center_count": 2
+  },
+  {
+    "id": 31,
+    "name": "Hungary",
+    "lat": 47.3249,
+    "lng": 19.2159,
+    "center_count": 19
+  },
+  {
+    "id": 32,
+    "name": "Iceland",
+    "lat": 64.1387,
+    "lng": -21.8798,
+    "center_count": 1
+  },
+  {
+    "id": 33,
+    "name": "Ireland",
+    "lat": 52.719,
+    "lng": -8.0175,
+    "center_count": 2
+  },
+  {
+    "id": 34,
+    "name": "Israel",
+    "lat": 31.4651,
+    "lng": 35.0358,
+    "center_count": 7
+  },
+  {
+    "id": 35,
+    "name": "Italy — Center-South",
+    "lat": 43.0654,
+    "lng": 11.6578,
+    "center_count": 7
+  },
+  {
+    "id": 36,
+    "name": "Italy — North",
+    "lat": 45.6243,
+    "lng": 10.1522,
+    "center_count": 7
+  },
+  {
+    "id": 37,
+    "name": "Japan",
+    "lat": 35.7001,
+    "lng": 139.5298,
+    "center_count": 1
+  },
+  {
+    "id": 38,
+    "name": "Kazakhstan",
+    "lat": 43.2551,
+    "lng": 76.9126,
+    "center_count": 1
+  },
+  {
+    "id": 39,
+    "name": "Latvia",
+    "lat": 56.4146,
+    "lng": 25.2874,
+    "center_count": 2
+  },
+  {
+    "id": 40,
+    "name": "Lithuania",
+    "lat": 55.2243,
+    "lng": 23.2763,
+    "center_count": 4
+  },
+  {
+    "id": 41,
+    "name": "Malta",
+    "lat": 35.9236,
+    "lng": 14.4696,
+    "center_count": 1
+  },
+  {
+    "id": 42,
+    "name": "Mexico",
+    "lat": 20.4287,
+    "lng": -96.1787,
+    "center_count": 8
+  },
+  {
+    "id": 43,
+    "name": "Mongolia",
+    "lat": 47.9189,
+    "lng": 106.9177,
+    "center_count": 1
+  },
+  {
+    "id": 44,
+    "name": "Montenegro",
+    "lat": 42.2825,
+    "lng": 18.836,
+    "center_count": 1
+  },
+  {
+    "id": 45,
+    "name": "Nepal",
+    "lat": 27.719,
+    "lng": 85.315,
+    "center_count": 1
+  },
+  {
+    "id": 46,
+    "name": "Netherlands",
+    "lat": 52.3174,
+    "lng": 5.5567,
+    "center_count": 7
+  },
+  {
+    "id": 47,
+    "name": "New Zealand",
+    "lat": -41.1986,
+    "lng": 173.2259,
+    "center_count": 3
+  },
+  {
+    "id": 48,
+    "name": "Norway",
+    "lat": 59.9987,
+    "lng": 8.7267,
+    "center_count": 7
+  },
+  {
+    "id": 49,
+    "name": "Peru",
+    "lat": -10.2848,
+    "lng": -76.5303,
+    "center_count": 3
+  },
+  {
+    "id": 50,
+    "name": "Poland — East",
+    "lat": 51.5424,
+    "lng": 21.302,
+    "center_count": 9
+  },
+  {
+    "id": 51,
+    "name": "Poland — North",
+    "lat": 53.5586,
+    "lng": 18.3285,
+    "center_count": 18
+  },
+  {
+    "id": 52,
+    "name": "Poland — South",
+    "lat": 50.1421,
+    "lng": 19.7706,
+    "center_count": 23
+  },
+  {
+    "id": 53,
+    "name": "Poland — West",
+    "lat": 51.4925,
+    "lng": 17.2302,
+    "center_count": 14
+  },
+  {
+    "id": 54,
+    "name": "Portugal",
+    "lat": 38.7253,
+    "lng": -9.2248,
+    "center_count": 1
+  },
+  {
+    "id": 55,
+    "name": "Romania",
+    "lat": 46.5853,
+    "lng": 23.7688,
+    "center_count": 7
+  },
+  {
+    "id": 56,
+    "name": "Russia — European",
+    "lat": 53.0045,
+    "lng": 40.4511,
+    "center_count": 29
+  },
+  {
+    "id": 57,
+    "name": "Russia — Far East",
+    "lat": 52.4943,
+    "lng": 123.3953,
+    "center_count": 15
+  },
+  {
+    "id": 58,
+    "name": "Russia — Siberia",
+    "lat": 54.2773,
+    "lng": 74.2217,
+    "center_count": 8
+  },
+  {
+    "id": 59,
+    "name": "Serbia",
+    "lat": 44.8065,
+    "lng": 20.4722,
+    "center_count": 1
+  },
+  {
+    "id": 60,
+    "name": "Singapore",
+    "lat": 1.2911,
+    "lng": 103.8508,
+    "center_count": 1
+  },
+  {
+    "id": 61,
+    "name": "Slovakia",
+    "lat": 48.6643,
+    "lng": 18.5239,
+    "center_count": 9
+  },
+  {
+    "id": 62,
+    "name": "Slovenia",
+    "lat": 46.0565,
+    "lng": 14.5142,
+    "center_count": 1
+  },
+  {
+    "id": 63,
+    "name": "South Africa",
+    "lat": -33.8757,
+    "lng": 18.4935,
+    "center_count": 1
+  },
+  {
+    "id": 64,
+    "name": "South Korea",
+    "lat": 37.5602,
+    "lng": 127.037,
+    "center_count": 1
+  },
+  {
+    "id": 65,
+    "name": "Spain — Canary Islands",
+    "lat": 28.304,
+    "lng": -15.8674,
+    "center_count": 2
+  },
+  {
+    "id": 66,
+    "name": "Spain — North",
+    "lat": 41.863,
+    "lng": -1.0361,
+    "center_count": 4
+  },
+  {
+    "id": 67,
+    "name": "Spain — South",
+    "lat": 37.6896,
+    "lng": -2.4904,
+    "center_count": 7
+  },
+  {
+    "id": 68,
+    "name": "Sweden",
+    "lat": 58.7549,
+    "lng": 16.1198,
+    "center_count": 3
+  },
+  {
+    "id": 69,
+    "name": "Switzerland",
+    "lat": 47.091,
+    "lng": 8.2713,
+    "center_count": 13
+  },
+  {
+    "id": 70,
+    "name": "Taiwan",
+    "lat": 24.9906,
+    "lng": 121.5231,
+    "center_count": 1
+  },
+  {
+    "id": 71,
+    "name": "Ukraine",
+    "lat": 49.1746,
+    "lng": 30.3579,
+    "center_count": 10
+  },
+  {
+    "id": 72,
+    "name": "United Kingdom",
+    "lat": 52.1219,
+    "lng": -1.2896,
+    "center_count": 13
+  },
+  {
+    "id": 73,
+    "name": "United States — Midwest",
+    "lat": 43.4996,
+    "lng": -90.4358,
+    "center_count": 5
+  },
+  {
+    "id": 74,
+    "name": "United States — Northeast",
+    "lat": 41.788,
+    "lng": -73.5387,
+    "center_count": 5
+  },
+  {
+    "id": 75,
+    "name": "United States — South",
+    "lat": 25.8288,
+    "lng": -80.1854,
+    "center_count": 1
+  },
+  {
+    "id": 76,
+    "name": "United States — Southwest",
+    "lat": 34.0584,
+    "lng": -101.3146,
+    "center_count": 6
+  },
+  {
+    "id": 77,
+    "name": "United States — West",
+    "lat": 38.1384,
+    "lng": -120.0352,
+    "center_count": 10
+  },
+  {
+    "id": 78,
+    "name": "Uruguay",
+    "lat": -34.9011,
+    "lng": -56.1645,
+    "center_count": 1
+  },
+  {
+    "id": 79,
+    "name": "Venezuela",
+    "lat": 9.4001,
+    "lng": -67.4885,
+    "center_count": 5
+  },
+  {
+    "id": 80,
+    "name": "Viet Nam",
+    "lat": 10.7922,
+    "lng": 106.7128,
+    "center_count": 1
+  }
+]
