@@ -26,8 +26,10 @@ REGIONS_FILE = HERE / "regions.json"
 DATA_DIR = Path(os.environ.get("DATA_DIR", str(HERE)))
 DB_FILE = DATA_DIR / "responses.db"
 
-ADMIN_USER = os.environ.get("ADMIN_USER", "admin")
-ADMIN_PASS = os.environ.get("ADMIN_PASS", "dwb2025")
+ADMIN_USER = os.environ.get("ADMIN_USER") or "admin"
+ADMIN_PASS = os.environ.get("ADMIN_PASS")
+if not ADMIN_PASS:
+    raise RuntimeError("ADMIN_PASS environment variable must be set")
 
 app = FastAPI()
 app.add_middleware(
