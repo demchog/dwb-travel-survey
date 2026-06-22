@@ -156,6 +156,7 @@
         placeholder: "Search your region…",
         maxItems: 1,
         create: false,
+        onItemAdd() { this.setTextboxValue(""); this.refreshOptions(); },
       });
 
       new TomSelect("#visited", {
@@ -163,6 +164,7 @@
         placeholder: "Search and add regions…",
         create: false,
         plugins: ["remove_button"],
+        onItemAdd() { this.setTextboxValue(""); this.refreshOptions(); },
       });
     }
 
